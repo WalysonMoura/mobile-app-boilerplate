@@ -18,6 +18,7 @@
     "test": "jest",
     "test:ci": "npm run test --coverage",
     "test:watch": "npm run test --watch",
+    "app-release": "cross-env SKIP_BRANCH_PROTECTION=true np --no-publish --no-cleanup --no-release-draft",
     "prepare": "husky",
     "clear": "rm -rf node_modules package-lock.json"
   },
