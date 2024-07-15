@@ -1,21 +1,21 @@
 module.exports = {
   root: true,
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2022,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
   },
   settings: {
     react: {
-      version: "detect",
+      version: 'detect',
     },
-    "import/resolver": {
+    'import/resolver': {
       node: {
-        paths: ["src"],
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
   },
@@ -26,39 +26,39 @@ module.exports = {
     jest: true,
   },
   extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "@react-native-community",
-    "plugin:prettier/recommended",
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    '@react-native-community',
+    'plugin:prettier/recommended',
   ],
-  plugins: ["simple-import-sort", "prettier", "unicorn", "import"],
+  plugins: ['simple-import-sort', 'prettier', 'unicorn', 'import'],
   rules: {
-    "prettier/prettier": [
-      "error",
+    'prettier/prettier': [
+      'error',
       {
         singleQuote: true,
-        endOfLine: "auto",
+        endOfLine: 'auto',
+        usePrettierrc: true,
       },
     ],
-    "unicorn/filename-case": [
-      "warn",
+    'unicorn/filename-case': [
+      'warn',
       {
-        case: "kebabCase",
-        ignore: ["/android", "/ios"],
+        case: 'kebabCase',
+        ignore: ['/android', '/ios'],
       },
     ],
-    "prettier/prettier": ["error", {}, { usePrettierrc: true }],
-    "react/react-in-jsx-scope": "off",
-    "react-hooks/exhaustive-deps": "off",
-    "react/prop-types": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
-    "import/no-duplicates": "error",
-    "import/first": "error",
-    "import/newline-after-import": "error",
+    'react/react-in-jsx-scope': 'off',
+    'react-hooks/exhaustive-deps': 'off',
+    'react/prop-types': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'import/no-duplicates': 'error',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
   },
 };
