@@ -16,8 +16,8 @@
     "type-check": "tsc  --noemit",
     "validate": "npm run lint && npm run format && npm run type-check && npm test",
     "test": "jest",
-    "test:ci": "pnpm run test --coverage",
-    "test:watch": "pnpm run test --watch",
+    "test:ci": "npm run test --coverage",
+    "test:watch": "npm run test --watch",
     "prepare": "husky",
     "clear": "rm -rf node_modules package-lock.json"
   },
